@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "icp-easy-bounty-1-backend": {
+      "main": "src/icp-easy-bounty-1-backend/main.mo",
+      "type": "motoko"
+    },
+    "icp-easy-bounty-1-frontend": {
+      "dependencies": [
+        "icp-easy-bounty-1-backend"
+      ],
+      "source": [
+        "src/icp-easy-bounty-1-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icp-easy-bounty-1-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
